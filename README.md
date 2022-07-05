@@ -12,8 +12,8 @@ A simple to-do-list game written in html, css and javascript using webpack and d
 * D — Dependency Inversion principle
 
 #### to-do:
-- [ ] setup npm and webpack
-- [ ] import css and modules
+- [x] setup npm and webpack
+- [x] import css and modules
 - [ ] basic skeleton
 - [ ] basic css
 - [ ] convert to use only js to create everything
