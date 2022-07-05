@@ -4,7 +4,8 @@
   "description": "A simple to-do-list game written in html, css and javascript using webpack and date-fns package.",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production"
+    "build": "webpack",
+    "watch": "webpack --watch"
   },
   "repository": {
     "type": "git",
