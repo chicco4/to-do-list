@@ -7,7 +7,7 @@ module.exports = {
         bundle: path.resolve(__dirname, './src/index.js')
     },
     output: {
-        filename: '[name].js',
+        filename: '[name].[contenthash].js',
         path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
