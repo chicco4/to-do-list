@@ -11,6 +11,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         clean: true,
     },
+    devtool: 'source-map',
     plugins: [
         new HtmlWebpackPlugin({
             title: 'to-do-list',
