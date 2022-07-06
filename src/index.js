@@ -1,4 +1,8 @@
 import './styles/global.css'
+import diamondIMP from './assets/diamond_FILL0_wght400_GRAD0_opsz48.svg'
+import inboxIMP from './assets/inbox_FILL0_wght400_GRAD0_opsz48.svg'
+import todayIMP from './assets/today_FILL0_wght400_GRAD0_opsz48.svg'
+import thisWeekIMP from './assets/date_range_FILL0_wght400_GRAD0_opsz48.svg'
 
 console.log("test")
 
@@ -8,7 +12,7 @@ function createHeader() {
     const header = document.createElement("header");
 
     const diamondImg = document.createElement("img");
-    diamondImg.src = "./assets/diamond_FILL0_wght400_GRAD0_opsz48.svg"
+    diamondImg.src = diamondIMP
 
     const pageTitle = document.createElement("h1");
     pageTitle.textContent = "To Do List";
@@ -26,17 +30,22 @@ function createMain() {
 
     const nav = document.createElement("nav")
 
-    const inboxBtn = document.createElement("button")
-    inboxBtn.classList.add("inbox")
+    const button = document.createElement("button")
+    button.classList.add("inbox")
 
     const inboxImg = document.createElement("img")
-    //inboxImg.src = "./assets/inbox_FILL0_wght400_GRAD0_opsz48.svg"
+    inboxImg.src = inboxIMP
 
-    inboxBtn.textContent = "Inbox"
+    const buttonTitle = document.createElement("p")
+    buttonTitle.textContent = "Inbox"
 
-    nav.appendChild(inboxBtn)
+    button.appendChild(inboxImg)
+    button.appendChild(buttonTitle)
+
+    nav.appendChild(button)
+
+
     main.appendChild(nav)
-
 
     return (main);
 }
