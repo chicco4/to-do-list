@@ -3,8 +3,8 @@ import diamondIMP from './assets/diamond_FILL0_wght400_GRAD0_opsz48.svg'
 import inboxIMP from './assets/inbox_FILL0_wght400_GRAD0_opsz48.svg'
 import todayIMP from './assets/today_FILL0_wght400_GRAD0_opsz48.svg'
 import thisWeekIMP from './assets/date_range_FILL0_wght400_GRAD0_opsz48.svg'
+import addIMP from './assets/add_FILL0_wght400_GRAD0_opsz48.svg'
 
-console.log("test")
 
 /* HEADER */
 
@@ -26,29 +26,87 @@ function createHeader() {
 /* MAIN */
 
 function createMain() {
+
+    /* nav */
+
     const main = document.createElement("main")
 
     const nav = document.createElement("nav")
 
+    nav.appendChild(createButton("Inbox"))
+    nav.appendChild(createButton("Today"))
+    nav.appendChild(createButton("This week"))
+
+    const title = document.createElement("h1")
+    title.textContent = "Projects"
+
+    const addProjectButton = document.createElement("buttons")
+    addProjectButton.textContent = "Projects"
+
+    nav.appendChild(title)
+    nav.appendChild(getProjectsList())
+    nav.appendChild(createButton("Add Project"))
+
+    /* article */
+
+    const article = document.createElement("article")
+    article.textContent = "article"
+
+
+    main.appendChild(nav)
+    main.appendChild(article)
+
+    return (main);
+}
+
+function getProjectsList() {
+
+    //PRIMA DEVO FINIRE LOGICA
+    const projList = document.createElement("div")
+    projList.classList.add("projects-list")
+
+    return projList
+}
+
+function createButton(string) {
+
     const button = document.createElement("button")
-    button.classList.add("inbox")
-
     const inboxImg = document.createElement("img")
-    inboxImg.src = inboxIMP
 
+    let imp;
+    switch (string) {
+        case 'Inbox':
+            imp = inboxIMP;
+            break;
+        case 'Today':
+            imp = todayIMP;
+            break;
+        case 'This week':
+            imp = thisWeekIMP;
+            break;
+        case 'Add Project':
+            imp = addIMP;
+            break;
+    }
+
+    inboxImg.src = imp;
     const buttonTitle = document.createElement("p")
-    buttonTitle.textContent = "Inbox"
+    buttonTitle.textContent = string
 
     button.appendChild(inboxImg)
     button.appendChild(buttonTitle)
 
-    nav.appendChild(button)
+    button.addEventListener("click", (e) => {
+        if (e.target.classList.contains("active")) return;
 
+        console.log(string)
+    })
 
-    main.appendChild(nav)
-
-    return (main);
+    return button;
 }
+
+
+
 
 /* FOOTER */
 
