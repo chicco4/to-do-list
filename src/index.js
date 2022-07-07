@@ -1,9 +1,18 @@
 import './styles/global.css'
+import { format } from 'date-fns'
+import Storage from './modules/Storage.js'
+import Project from './modules/Project.js'
+import Task from './modules/Task.js'
+
 import diamondIMP from './assets/diamond_FILL0_wght400_GRAD0_opsz48.svg'
 import inboxIMP from './assets/inbox_FILL0_wght400_GRAD0_opsz48.svg'
 import todayIMP from './assets/today_FILL0_wght400_GRAD0_opsz48.svg'
 import thisWeekIMP from './assets/date_range_FILL0_wght400_GRAD0_opsz48.svg'
 import addIMP from './assets/add_FILL0_wght400_GRAD0_opsz48.svg'
+import circleIMP from './assets/radio_button_unchecked_FILL0_wght400_GRAD0_opsz48.svg'
+import cirleCheckIMP from './assets/check_circle_FILL0_wght400_GRAD0_opsz48.svg'
+import closeIMP from './assets/close_FILL0_wght400_GRAD0_opsz48.svg'
+import projIMP from './assets/checklist_FILL0_wght400_GRAD0_opsz48.svg'
 
 /* HEADER */
 
