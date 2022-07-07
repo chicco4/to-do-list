@@ -1,6 +1,8 @@
 # to-do-list
 A simple to-do-list game written in html, css and javascript using webpack and date-fns package.
 
+util: https://github.com/date-fns/date-fns
+
 [Live Demo](https://chicco4.github.io/to-do-list/) :point_left:
 
 #### trying my best to implement SOLID and webpack correctly
@@ -12,8 +14,8 @@ A simple to-do-list game written in html, css and javascript using webpack and d
 * D — Dependency Inversion principle
 
 #### to-do:
-- [x] setup npm and webpack
-- [x] import css and modules
+- [ ] setup npm and webpack
+- [ ] import css and modules
 - [ ] basic skeleton
 - [ ] basic css
 - [ ] convert to use only js to create everything
