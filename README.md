@@ -20,3 +20,6 @@ A simple to-do-list game written in html, css and javascript using webpack and d
 - [ ] use good material design 
 - [ ] good OOP?
 - [ ] good SOLID?
+
+from:
+https://www.theodinproject.com/lessons/node-path-javascript-todo-list
