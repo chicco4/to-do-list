@@ -4,7 +4,6 @@ import inboxIMP from './assets/inbox_FILL0_wght400_GRAD0_opsz48.svg'
 import todayIMP from './assets/today_FILL0_wght400_GRAD0_opsz48.svg'
 import thisWeekIMP from './assets/date_range_FILL0_wght400_GRAD0_opsz48.svg'
 import addIMP from './assets/add_FILL0_wght400_GRAD0_opsz48.svg'
-import TodoList from './TodoList-js'
 
 /* HEADER */
 
