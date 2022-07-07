@@ -1,7 +1,7 @@
 # to-do-list
 A simple to-do-list game written in html, css and javascript using webpack and date-fns package.
 
-util: https://github.com/date-fns/date-fns
+util: https://github.com/date-fns/date-fns || https://date-fns.org/
 
 [Live Demo](https://chicco4.github.io/to-do-list/) :point_left:
 
