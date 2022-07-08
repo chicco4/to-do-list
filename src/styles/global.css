@@ -3,237 +3,236 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 /* header */
 
 header {
-    height: 12vh;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: row;
-    padding-left: 20px;
-    align-items: center;
+  height: 12vh;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+  align-items: center;
 
-    background-color: lightslategray;
-
+  background-color: lightslategray;
 }
 
 header h1 {
-    font-size: 50px;
-    font-weight: 600;
+  font-size: 50px;
+  font-weight: 600;
 }
 
 header img {
-    height: 60px;
+  height: 60px;
 }
 
 /* main */
 
 main {
-    flex: 1 0 auto;
-    display: flex;
-    flex-direction: column;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
 
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 /* content */
 
 nav {
-    width: 300px;
-    min-width: 250px;
-    padding: 20px;
-    background-color: lightgray;
+  width: 300px;
+  min-width: 250px;
+  padding: 20px;
+  background-color: lightgray;
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 nav button {
-    width: 100%;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: lightgray;
-    font-size: 22px;
-    display: flex;
-    gap: 2px;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: lightgray;
+  font-size: 22px;
+  display: flex;
+  gap: 2px;
 }
 
 nav img {
-    height: 26px;
+  height: 26px;
 }
 
 nav button.active {
-    background-color: lightslategray;
-    font-weight: bold;
+  background-color: lightslategray;
+  font-weight: bold;
 }
 
 nav button:hover {
-    background-color: lightyellow;
+  background-color: lightyellow;
 }
 
 nav h1 {
-    padding: 10px;
-    margin-top: 10px;
-    font-size: 26px;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 26px;
 }
 
 button {
-    border: none;
+  border: none;
 }
 
 button.project {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .to-close:hover {
-    background-color: lightslategray;
-    border-radius: 5px;
+  background-color: lightslategray;
+  border-radius: 5px;
 }
 
 /* content */
 
 article {
-    width: 900px;
-    padding: 20px 40px;
-    margin: 0 auto;
+  width: 900px;
+  padding: 20px 40px;
+  margin: 0 auto;
 }
 
 article button:hover {
-    background-color: lightgray;
+  background-color: lightgray;
 }
 
 article h1 {
-    margin-bottom: 10px;
-    padding-left: 30px;
-    font-size: 26px;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  font-size: 26px;
 }
 
 .left {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .task {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: default;
-    width: 100%;
-    margin-bottom: 10px;
-    font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: default;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 16px;
 }
 
 article img {
-    height: 30px;
+  height: 30px;
 }
 
 .right {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .left img {
-    padding-right: 20px;
+  padding-right: 20px;
 }
 
 .right input {
-    margin-right: 10px;
-    cursor: pointer;
+  margin-right: 10px;
+  cursor: pointer;
 }
 
 .add-task {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: default;
-    width: 100%;
-    margin-bottom: 10px;
-    font-size: 20px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: default;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 20px;
 }
 
 .add-task img {
-    padding-right: 20px;
+  padding-right: 20px;
 }
 
 .popup {
-    display: none;
+  display: none;
 }
 
 .popup.active {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    width: 100%;
-    background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 100%;
+  background-color: lightgray;
 }
 
 .popup input {
-    height: 30px;
-    margin-bottom: 10px;
+  height: 30px;
+  margin-bottom: 10px;
 }
 
 .popup-buttons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    gap: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
 }
 
 .popup-buttons button {
-    width: 100%;
-    border-radius: 5px;
-    cursor: pointer;
-    min-height: 30px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  min-height: 30px;
 }
 
 .add-button {
-    background-color: #9fff9c;
+  background-color: #9fff9c;
 }
 
 .cancel-button {
-    background-color: #ff9c9c;
+  background-color: #ff9c9c;
 }
 
 .add-button:hover {
-    background-color: #60f677;
+  background-color: #60f677;
 }
 
 .cancel-button:hover {
-    background-color: #ff7878;
+  background-color: #ff7878;
 }
 
 /* footer */
 
 footer {
-    height: 8vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    font-size: large;
-    flex-shrink: 0;
-    background-color: lightslategray;
+  height: 8vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: large;
+  flex-shrink: 0;
+  background-color: lightslategray;
 }
 
 footer a {
-    font-size: large;
-    text-decoration: none;
+  font-size: large;
+  text-decoration: none;
 }
