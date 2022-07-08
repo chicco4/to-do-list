@@ -22,7 +22,7 @@ util: https://github.com/date-fns/date-fns || https://date-fns.org/
 - [ ] use good material design 
 - [ ] good OOP?
 - [ ] good SOLID?
-- [ ] should use esLint or Standard and inastall prettier
+- [ ] should use esLint or Standard and prettier
 
 from:
 https://www.theodinproject.com/lessons/node-path-javascript-todo-list
